@@ -1,0 +1,67 @@
+.home-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+
+
+    .left {
+        text-align: right;
+    }
+    .right {
+        text-align: left;
+    }
+
+    h3 {
+        color: #212121;
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+
+    ul.post-list {
+        a{ color: $highlight; }
+
+        .post-title {
+            font-size: 16px;
+            letter-spacing: 0;
+        }
+
+        .post-meta {
+            color: $grey-color-dark;
+        }
+    }
+}
+
+.about-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .item {
+        flex-basis: 33%;
+
+        .circle {
+            display: flex;
+            background: $brand-color;
+            height: 80px;
+            width: 80px;
+            border-radius: 40px;
+            margin: 20px auto;
+            justify-content: center;
+
+            img {
+                align-self: center;
+                max-width: 60%;
+                padding-bottom: 2px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 18px;
+            color:  $grey-color-dark;
+            text-align: center;
+        }
+    }
+}

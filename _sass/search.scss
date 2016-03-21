@@ -1,0 +1,6 @@
+#search_results {
+	span {
+		text-transform: capitalize;
+		&:after { content: ":"; }
+	}
+}

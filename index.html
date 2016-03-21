@@ -1,38 +1,73 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+---
+layout: default
+---
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+<div class="home">
 
-    <title>Digital Democracy Lab by digidem</title>
-  </head>
+<section>
+	<p>
+		<a href="http://digital-democracy.org">Digital Democracy (Dd)</a> is a US-based nonprofit that empowers indigenous peoples with evidence-based storytelling tools to defend the world’s forests and critical ecosystems. We draw upon a wide network of partners around the world to build tools and provide technical support where it is needed most. This site introduces the tools, big and small, that we’ve created with our mapping and monitoring partners.
+	</p>
+</section>
 
-  <body>
+<form action="get" id="site_search">
+  <input type="text" id="search_box">
+  <input type="submit" value="search">
+</form>
 
-    <header>
-      <div class="container">
-        <h1>Digital Democracy Lab</h1>
-        <h2>Placeholder for our Github projects</h2>
+<ul id="search_results"></ul>
 
-        <section id="downloads">
-          <a href="https://github.com/digidem" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+<script src="/js/lunr.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/search.js"></script>
 
-    <div class="container">
-      <section id="main_content">
-        <h3>
-<a id="welcome-to-the-digital-democracy-lab" class="anchor" href="#welcome-to-the-digital-democracy-lab" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to the Digital Democracy lab</h3>
+<section class="home-content">
+	<div class="width-half left">
+		<h3> Top Modules </h3>
+		<ul class="post-list">
+		{% for p in site.pages %}
+		    {% if p.layout == 'module' and p.featured == true %}
+		      <li>
+		      <div class="post-title"><a href="{{p.url}}">{{p.title}}</a></div>
+		      <div class="post-meta">{{p.description}}</div>
+		      </li>
+		    {% endif %}
+		{%endfor%}
+		</ul>
+	</div>
 
-<p>This is a placeholder index page for our Github projects.</p>
-      </section>
-    </div>
+	<div class="width-half right">
+		<h3> Recent Posts </h3>
+		<ul class="post-list">
+		{% for p in site.posts | limit: 5 %}
+		      <li>
+		      	<div class="post-title"><a href="{{p.url}}">{{p.title}}</a></div>
+		      	<div class="post-meta">{{p.date | date_to_long_string }} {% if p.author%}by {{p.author}}{%endif%}</div>
+		      </li>
+		{%endfor%}
+		</ul>
+	</div>
+</section>
 
-    
-  </body>
-</html>
+<section class="about-content">
+	<div class="item">
+		<div class="circle"><img src="/images/share.png"></div>
+		<p>All of our code is published under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+		<p>Use, study, share, and improve these tools at no cost.</p>
+	</div>
+
+	<div class="item">
+		<div class="circle"><img src="/images/mail.png"></div>
+		<p>Did you use these tools in your own work? Want to learn more about our volunteer network?</p>
+		<p> We’d love to hear from you.
+		<a href="mailto:info@digital-democracy.org">info@digital-democracy.org</a></p>
+	</div>
+
+	<div class="item">
+		<div class="circle"><img src="/images/dd-white.png"></div>
+		<p>For more on our organization and our work, visit:</p>
+		<p><a href="http://digital-democracy.org/">digital-democracy.org</a></p>
+	</div>
+</section>
+
+</div>

@@ -1,0 +1,27 @@
+---
+layout: null
+---
+{
+  {% for post in site.posts %}
+
+    "{{ post.url | slugify }}": {
+      "type": "post",
+      "title": "{{ post.title | xml_escape }}",
+      "url": " {{ post.url | xml_escape }}",
+      "author": "{{ post.author | xml_escape }}",
+      "category": "{{ post.category | xml_escape }}"
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %},
+  {% for page in site.pages %}
+
+    "{{ page.url | slugify }}": {
+      "type": "{% if page.layout == 'module' %}module{%else%}page{%endif%}",
+      "title": "{{ page.title | xml_escape }}",
+      "url": " {{ page.url | xml_escape }}",
+      "author": "{{ page.author | xml_escape }}",
+      "category": "{{ page.category | xml_escape }}"
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+}

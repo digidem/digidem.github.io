@@ -1,0 +1,22 @@
+---
+layout: page
+title: Modules
+permalink: /modules/
+---
+
+  <ul class="post-list">
+    {% for page in site.pages %}
+      {% if page.layout == 'module' %}
+        <div class="post-meta">
+          <span class="post-categories">
+            {% for c in page.categories %}<a href="{{site.baseurl}}/modules/categories/{{c}}">{{c}}</a>{%endfor%}
+          </span>
+        </div>
+        <li>
+        <div class="post-link"><a href="{{page.url}}">{{page.title}}</a></div>
+        <div class="post-meta">{{page.description}}</div>
+        </li>
+
+      {% endif %}
+    {% endfor %}
+  </ul>
