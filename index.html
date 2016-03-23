@@ -5,9 +5,11 @@ layout: default
 <div class="home">
 
 <section>
-	<p>
-		<a href="http://digital-democracy.org">Digital Democracy (Dd)</a> is a US-based nonprofit that empowers indigenous peoples with evidence-based storytelling tools to defend the world’s forests and critical ecosystems. We draw upon a wide network of partners around the world to build tools and provide technical support where it is needed most. This site introduces the tools, big and small, that we’ve created with our mapping and monitoring partners.
-	</p>
+	<p><a href="http://digital-democracy.org">Digital Democracy (Dd)</a> is a US-based nonprofit whose mission is to empower marginalized communities to use tech to defend their rights.</p>
+
+	<p>Our program focus is to work with indigenous peoples and evidence-based storytelling tools to defend the world’s forests and critical ecosystems. We draw upon a wide network of partners around the world to build tools and provide technical support where it is needed most. </p>
+
+	<p>This site introduces the tools, big and small, that we’re creating with our mapping and monitoring partners.	</p>
 </section>
 
 <form action="get" id="site_search">
@@ -23,7 +25,7 @@ layout: default
 
 <section class="home-content">
 	<div class="width-half left">
-		<h3> Top Modules </h3>
+		<h3> Featured Modules </h3>
 		<ul class="post-list">
 		{% for p in site.pages %}
 		    {% if p.layout == 'module' and p.featured == true %}
