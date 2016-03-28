@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "parse-github-payload"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -78,6 +79,4 @@ $ npm test
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/parse-github-payload).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/parse-github-payload)

@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "Remote Access: Raspberry Pi Media Repository"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -140,6 +141,4 @@ The Pi can just connect via ethernet to the router / internet connection. Normal
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/RemoteAccess/wiki/Raspberry-Pi-Media-Repository).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/RemoteAccess/wiki/Raspberry-Pi-Media-Repository)

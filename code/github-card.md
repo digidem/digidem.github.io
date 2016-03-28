@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "github-card"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -14,6 +15,4 @@ Not sure how useful this is to anyone. It was just the end of an unproductive da
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/github-card).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/github-card)

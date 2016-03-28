@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "github-image-resizer"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -48,6 +49,4 @@ npm test
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/github-image-resizer).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/github-image-resizer)

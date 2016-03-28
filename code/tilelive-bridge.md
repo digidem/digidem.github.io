@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "tilelive-bridge"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -52,6 +53,4 @@ tilelive.load('bridge:///path/to/file.xml', function(err, source) {
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/tilelive-bridge).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/tilelive-bridge)

@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "xform-to-json"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -65,6 +66,4 @@ Pass a hash of any metadata values to add to the form, e.g. `meta.submissionTime
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/xform-to-json).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/xform-to-json)

@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "osm2json"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -73,6 +74,4 @@ rs.pipe(osm2Json).pipe(process.stdout);
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/osm2json).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/osm2json)

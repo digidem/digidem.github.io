@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "blitline-resizer"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -82,6 +83,4 @@ Add `options.retina` to also create retina versions of images. Defaults to false
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/blitline-resizer).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/blitline-resizer)

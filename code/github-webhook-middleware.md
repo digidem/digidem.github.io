@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "github-webhook-middleware"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -78,6 +79,4 @@ Pull requests welcome. Needs tests.
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/github-webhook-middleware).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/github-webhook-middleware)

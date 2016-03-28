@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "cache-blob-store"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -145,6 +146,4 @@ Remove an image from the cache for `url`
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/cache-blob-store).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/cache-blob-store)

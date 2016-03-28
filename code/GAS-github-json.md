@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "GAS-github-json"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -38,6 +39,4 @@ I have done no testing on this. It works for our particular dataset at this time
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/GAS-github-json).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/GAS-github-json)

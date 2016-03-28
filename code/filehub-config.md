@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "filehub-config"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -114,6 +115,4 @@ We are using [ODK Collect](http://opendatakit.org/use/collect/) for data collect
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/filehub-config).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/filehub-config)

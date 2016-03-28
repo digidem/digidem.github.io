@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "GAS-image-upload"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -39,6 +40,4 @@ This does not work in the new version of Google Sheets at the moment, because th
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/GAS-image-upload).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/GAS-image-upload)

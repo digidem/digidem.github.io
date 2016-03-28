@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "my-simple-odk"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -44,6 +45,4 @@ Just click the button below and fill in the required environment variables (see 
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/my-simple-odk).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/my-simple-odk)

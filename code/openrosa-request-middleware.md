@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "openrosa-request-middleware"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -40,6 +41,4 @@ pass `options = {strict: false}` to ignore request headers
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/openrosa-request-middleware).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/openrosa-request-middleware)

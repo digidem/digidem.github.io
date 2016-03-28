@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "xhr-offline"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -39,5 +40,3 @@ Data is stored transparently and currently without encryption in the cache, so t
 ======================
 
 See it on [GitHub](https://github.com/digidem/xhr-offline).
-
-Return to [Modules](/modules).

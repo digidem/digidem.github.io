@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "mapbox-tile-copy"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -79,6 +80,4 @@ If you don't specify a bucket, it will attempt to write to a private Mapbox buck
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/mapbox-tile-copy).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/mapbox-tile-copy)

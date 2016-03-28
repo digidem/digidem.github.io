@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "leaflet-side-by-side"
 date:   2016-03-17 20:43:00 -0700
 categories: []
@@ -84,6 +85,4 @@ MIT
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/leaflet-side-by-side).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/leaflet-side-by-side)

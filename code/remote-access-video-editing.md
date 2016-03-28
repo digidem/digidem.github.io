@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "Remote Access: Video Editing"
 date:   2016-03-17 20:43:00 -0700
 categories: ['']
@@ -36,6 +37,4 @@ I discovered this tool, [HTML5-videoEditor](https://github.com/casatt/html5-vide
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/RemoteAccess/wiki/Video-Editing).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/RemoteAccess/wiki/Video-Editing)

@@ -1,5 +1,6 @@
 ---
-layout: module
+layout: code
+type: module
 title:  "react-dimensions"
 date:   2016-03-15 21:43:00 -0700
 categories: ['']
@@ -99,6 +100,4 @@ $ npm test
 
 ======================
 
-See it on [GitHub](https://github.com/digidem/react-dimensions).
-
-Return to [Modules](/modules).
+See it on [GitHub](https://github.com/digidem/react-dimensions)
