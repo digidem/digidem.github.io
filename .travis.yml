@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.1
 install: gem install github-pages && gem install s3_website
-script: jekyll build
+script: echo "baseurl: /$TRAVIS_BRANCH" >> _config.yml && jekyll build
 after_success: s3_website push
 branches:
   except:
