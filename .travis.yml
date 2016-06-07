@@ -2,14 +2,16 @@ language: ruby
 rvm:
   - 2.1
 install: gem install github-pages && gem install s3_website
-script: |
-  jekyll build && cat <<EOF >> s3_website.yml
-  s3_id: $S3_ACCESS_KEY_ID
-  s3_secret: $S3_SECRET_KEY
-  s3_bucket: ddem-staging
-  s3_key_prefix: ${TRAVIS_REPO_SLUG}/${TRAVIS_BRANCH}
-  after_success: s3_website push
-  EOF
 branches:
   except:
     - master
+before_deploy: jekyll build
+deploy:
+  provider: s3
+  access_key_id: $S3_ACCESS_KEY_ID
+  secret_access_key: $S3_SECRET_KEY
+  bucket: "digidem-staging"
+  skip_cleanup: true
+  upload-dir: ${TRAVIS_REPO_SLUG}/${TRAVIS_BRANCH}
+  local_dir: _site
+  detect_encoding: true
