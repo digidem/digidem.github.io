@@ -2,8 +2,14 @@ language: ruby
 rvm:
   - 2.1
 install: gem install github-pages && gem install s3_website
-script: echo "baseurl: /$TRAVIS_BRANCH" >> _config.yml && jekyll build
-after_success: s3_website push
+script: |
+  jekyll build && cat <<EOF >> s3_website.yml
+  s3_id: $S3_ACCESS_KEY_ID
+  s3_secret: $S3_SECRET_KEY
+  s3_bucket: ddem-staging
+  s3_key_prefix: ${TRAVIS_REPO_SLUG}/${TRAVIS_BRANCH}
+  after_success: s3_website push
+  EOF
 branches:
   except:
     - master
