@@ -15,3 +15,5 @@ deploy:
   upload-dir: ${TRAVIS_REPO_SLUG}/${TRAVIS_BRANCH}
   local_dir: _site
   detect_encoding: true
+  on:
+    all_branches: true
