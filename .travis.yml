@@ -2,10 +2,10 @@ language: ruby
 rvm:
   - 2.1
 install: gem install github-pages
+script: jekyll build
 branches:
   except:
     - master
-before_deploy: jekyll build
 deploy:
   provider: s3
   access_key_id: $S3_ACCESS_KEY_ID
