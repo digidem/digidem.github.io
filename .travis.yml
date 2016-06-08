@@ -12,7 +12,7 @@ deploy:
   secret_access_key: $S3_SECRET_KEY
   bucket: "digidem-staging"
   skip_cleanup: true
-  upload-dir: ${TRAVIS_REPO_SLUG}/${TRAVIS_BRANCH}
+  upload-dir: digidem/lab/${TRAVIS_BRANCH}
   local_dir: _site
   detect_encoding: true
   on:
