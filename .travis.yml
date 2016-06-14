@@ -1,9 +1,19 @@
 language: ruby
 rvm:
   - 2.1
-install: gem install github-pages && gem install s3_website
+install: gem install github-pages
 script: jekyll build
-after_success: s3_website push
 branches:
   except:
     - master
+deploy:
+  provider: s3
+  access_key_id: $S3_ACCESS_KEY_ID
+  secret_access_key: $S3_SECRET_KEY
+  bucket: "digidem-staging"
+  skip_cleanup: true
+  upload-dir: digidem/lab/${TRAVIS_BRANCH}
+  local_dir: _site
+  detect_encoding: true
+  on:
+    all_branches: true
